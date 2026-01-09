@@ -29,6 +29,7 @@ body {
 .card:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.256);
   transform: translateY(-8px)scale(1.03);
+  color: #111;
 }
 
 .card-img {
