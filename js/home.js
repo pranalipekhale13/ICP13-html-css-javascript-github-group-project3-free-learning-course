@@ -9,22 +9,18 @@ function changeText() {
         document.querySelector(".navbar").classList.toggle("show");
     }
 
-  
     function toggleTheme(){
-      const themeToggle = document.getElementById("theme-toggle");
-    const icoLight = document.getElementById("ico-light");
-    const icoDark = document.getElementById("ico-dark");
+         const savedTheme = localStorage.getItem("theme");
 
-        const localStoragetheme = localStorage.getItem("theme");
-        if(localStoragetheme === "dark"){
-           toggleLight();
-           localStorage.setItem("theme", "light");
-        } else {
-           toggleDark();
-              localStorage.setItem("theme", "dark");
+    if (savedTheme === "dark") {
+        toggleLight();
+    } else {
+        toggleDark();
     }
+}
+   
     function toggleDark() {
-      const themeToggle = document.getElementById("theme-toggle");
+       const themeToggle = document.getElementById("theme-toggle");
     const icoLight = document.getElementById("ico-light");
     const icoDark = document.getElementById("ico-dark");
         document.body.style.backgroundColor = "black";
@@ -35,7 +31,7 @@ function changeText() {
         localStorage.setItem("theme", "dark");
     }
     function toggleLight(){
-      const themeToggle = document.getElementById("theme-toggle");
+       const themeToggle = document.getElementById("theme-toggle");
     const icoLight = document.getElementById("ico-light");
     const icoDark = document.getElementById("ico-dark");
         document.body.style.backgroundColor = "white";
@@ -46,12 +42,13 @@ function changeText() {
         localStorage.setItem("theme", "light");
     }
    function renderTheme(){
-    const localStoragetheme = localStorage.getItem("theme");
-    if(localStoragetheme === "dark"){
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
         toggleDark();
     } else {
         toggleLight();
     }
 }
-    renderTheme();
-    }
+
+renderTheme();
