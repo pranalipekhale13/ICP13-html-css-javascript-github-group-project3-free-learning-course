@@ -4,51 +4,54 @@ function changeText() {
   document.getElementById("text").innerText = "Text changed using JavaScript 🎉";
 }
 
-
-    function toggleMenu() {
+ function toggleMenu() {
         document.querySelector(".navbar").classList.toggle("show");
     }
 
-    function toggleTheme(){
-         const savedTheme = localStorage.getItem("theme");
-
-    if (savedTheme === "dark") {
-        toggleLight();
-    } else {
-        toggleDark();
-    }
-}
-   
-    function toggleDark() {
-       const themeToggle = document.getElementById("theme-toggle");
-    const icoLight = document.getElementById("ico-light");
+  
+    function toggleTheme() {
+        const icoLight = document.getElementById("ico-light");
     const icoDark = document.getElementById("ico-dark");
-        document.body.style.backgroundColor = "black";
-        icoLight.style.visibility = "hidden";
-        icoDark.style.visibility = "visible";
-        themeToggle.classList.remove("theme-toggle-light");
-        themeToggle.classList.add("theme-toggle-dark");
-        localStorage.setItem("theme", "dark");
-    }
-    function toggleLight(){
-       const themeToggle = document.getElementById("theme-toggle");
-    const icoLight = document.getElementById("ico-light");
-    const icoDark = document.getElementById("ico-dark");
-        document.body.style.backgroundColor = "white";
-        icoLight.style.visibility = "visible";
-        icoDark.style.visibility = "hidden";
-        themeToggle.classList.remove("theme-toggle-dark");
-        themeToggle.classList.add("theme-toggle-light");
+    const themeToggle = document.getElementById("theme-toggle");
+      const localstorageTheme = localStorage.getItem("theme");
+      if (localstorageTheme === "dark") {
+        ToggleLight();
         localStorage.setItem("theme", "light");
+      } else {
+        ToggleDark();
+        localStorage.setItem("theme", "dark");
+      }
     }
-   function renderTheme(){
-    const savedTheme = localStorage.getItem("theme");
+    function ToggleDark() {
+       const icoLight = document.getElementById("ico-light");
+    const icoDark = document.getElementById("ico-dark");
+    const themeToggle = document.getElementById("theme-toggle");
+      document.body.style.backgroundColor = "#fff";
+      icoLight.style.visibility = "hidden";
+      icoDark.style.visibility = "visible";
+      themeToggle.classList.add("theme-toggle-dark");
+      themeToggle.classList.remove("theme-toggle-light");
 
-    if (savedTheme === "dark") {
-        toggleDark();
-    } else {
-        toggleLight();
     }
-}
-
-renderTheme();
+    function ToggleLight() {
+       const icoLight = document.getElementById("ico-light");
+       const icoDark = document.getElementById("ico-dark");
+       const themeToggle = document.getElementById("theme-toggle");
+      document.body.style.backgroundColor = "#000";
+      icoLight.style.visibility = "visible";
+      icoDark.style.visibility = "hidden";
+      themeToggle.classList.add("theme-toggle-light");
+      themeToggle.classList.remove("theme-toggle-dark");
+    }
+    function renderTheme() {
+       const icoLight = document.getElementById("ico-light");
+       const icoDark = document.getElementById("ico-dark");
+       const themeToggle = document.getElementById("theme-toggle");
+      const localstorageTheme = localStorage.getItem("theme");
+      if (localstorageTheme === "dark") {
+        ToggleDark();
+      }else{
+        ToggleLight();
+      }
+    }
+    renderTheme();
