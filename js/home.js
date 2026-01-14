@@ -10,7 +10,7 @@ function changeText() {
 
   
     function toggleTheme() {
-       const icoLight = document.getElementById("ico-light");
+        const icoLight = document.getElementById("ico-light");
     const icoDark = document.getElementById("ico-dark");
     const themeToggle = document.getElementById("theme-toggle");
       const localstorageTheme = localStorage.getItem("theme");
@@ -26,7 +26,7 @@ function changeText() {
        const icoLight = document.getElementById("ico-light");
     const icoDark = document.getElementById("ico-dark");
     const themeToggle = document.getElementById("theme-toggle");
-      document.body.style.backgroundColor = "#fff2e6";
+      document.body.style.backgroundColor = "#fff";
       icoLight.style.visibility = "hidden";
       icoDark.style.visibility = "visible";
       themeToggle.classList.add("theme-toggle-dark");
@@ -35,8 +35,8 @@ function changeText() {
     }
     function ToggleLight() {
        const icoLight = document.getElementById("ico-light");
-    const icoDark = document.getElementById("ico-dark");
-    const themeToggle = document.getElementById("theme-toggle");
+       const icoDark = document.getElementById("ico-dark");
+       const themeToggle = document.getElementById("theme-toggle");
       document.body.style.backgroundColor = "#000";
       icoLight.style.visibility = "visible";
       icoDark.style.visibility = "hidden";
@@ -45,8 +45,8 @@ function changeText() {
     }
     function renderTheme() {
        const icoLight = document.getElementById("ico-light");
-    const icoDark = document.getElementById("ico-dark");
-    const themeToggle = document.getElementById("theme-toggle");
+       const icoDark = document.getElementById("ico-dark");
+       const themeToggle = document.getElementById("theme-toggle");
       const localstorageTheme = localStorage.getItem("theme");
       if (localstorageTheme === "dark") {
         ToggleDark();
