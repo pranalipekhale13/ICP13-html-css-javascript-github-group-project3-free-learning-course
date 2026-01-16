@@ -26,7 +26,7 @@ function changeText() {
        const icoLight = document.getElementById("ico-light");
     const icoDark = document.getElementById("ico-dark");
     const themeToggle = document.getElementById("theme-toggle");
-      document.body.style.backgroundColor = "#fff";
+      document.body.style.backgroundColor = "#ffe4cc";
       icoLight.style.visibility = "hidden";
       icoDark.style.visibility = "visible";
       themeToggle.classList.add("theme-toggle-dark");
