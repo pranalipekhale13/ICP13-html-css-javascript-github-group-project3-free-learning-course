@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Cybersecurity for Everyone</title>
-  <link rel="stylesheet" href="../css/cybersecurity.css">
+  <link rel="stylesheet" href="../css/Ai.css">
 </head>
+
 <body>
- <div class="app-title">
+  <div class="app-title">
     <img class="logo" src="../images/logo.png"/>
     <h2 class="title">SkillSprout</h2>
     <div class="navbar">
@@ -14,23 +16,24 @@
     <a class="nav-item"  href="course.html">Courses</a>
     <a class="nav-item" href="todo.html">To-Do</a>
     <a class="nav-item" href="notes.html">Notes</a>
-    <button class="btn" >Log in</button>
+     <a href="login.html"><button class="btn" >Log in</button></a>
     </div>
     <img src="../images/hamburger.png" class="hamburger-icon" onclick="toggleMenu()">
     </div>
 
-<section class="main">
-   <div class="main-text">
-  <h1>Cybersecurity for Everyone</h1><br>
-   <p>Instructor: <strong>xyz</strong></p><br>
-  <button class="btn-primary">Enroll for Free</button>
-  </div>
-</section>
-<br><br>
+  <section class="main">
+    <div class="main-text">
+      <h1>Cybersecurity for Everyone</h1><br>
+      <p>Instructor: <strong>xyz</strong></p><br>
+      <a href="login.html"><button class="btn-primary">Enroll for Free</button></a>
+    </div>
+  </section>
+  <br><br>
+ 
 
-<div class="course-info-container">
+  <div class="course-info-container">
     <div class="info-box">
-      <h3> 6 modules</h3>
+      <h3> 5 modules</h3>
       <p>Gain insight into a topic and learn the fundamentals.</p>
     </div>
 
@@ -46,7 +49,7 @@
 
     <div class="info-box">
       <h3>Flexible schedule</h3>
-      <p>2 weeks at 10 hours a week<br>Learn at your own pace</p>
+      <p>4 weeks at 10 hours a week<br>Learn at your own pace</p>
     </div>
 
     <div class="info-box">
@@ -55,16 +58,18 @@
     </div>
     </div>
 <br><br>
-<section>
-<div class="nav">
-    <a href="#about">About</a>
-    <a href="#outcomes">Outcomes</a>
-    <a href="#modules">Modules</a>
-    <a href="#reviews">Reviews</a>
-  </div>
+
+  <section>
+    <div class="nav">
+      <a href="#about">About</a>
+      <a href="#outcomes">Outcomes</a>
+      <a href="#modules">Modules</a>
+      <a href="#reviews">Reviews</a>
+    </div>
   </section>
-<br>
-<section id="about">
+  <br>
+
+  <section id="about">
   <h2>About this course</h2><br>
   <p>
     This course introduces the foundations of cybersecurity, including threats,
@@ -85,74 +90,63 @@
     <span>Public Safety</span>
   </div>
 
-  </section>
-<br>
 
-<section id="modules">
-  <div class="layout">
-
-    <div class="modules">
-      <h2>Course Modules</h2>
-
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggle(this)">
-          Defining Cyber, Security, and Cybersecurity
-        </div>
-        <div class="accordion-body">
-          Fundamentals of cybersecurity concepts and terminology.
-        </div>
-
-        <div class="accordion-header" onclick="toggle(this)">
-          Evolution of the Internet
-        </div>
-        <div class="accordion-body">
-          How internet growth created cybersecurity challenges.
-        </div>
-
-        <div class="accordion-header" onclick="toggle(this)">
-          Global Telecommunications Architecture
-        </div>
-        <div class="accordion-body">
-          Understanding global networks and vulnerabilities.
-        </div>
-
-        <div class="accordion-header" onclick="toggle(this)">
-          Threat Actors and Motivations
-        </div>
-        <div class="accordion-body">
-          Types of attackers and their objectives.
-        </div>
-
-        <div class="accordion-header" onclick="toggle(this)">
-          The Hacking Process
-        </div>
-        <div class="accordion-body">
-          Steps involved in cyber attacks.
-        </div>
+  <section id="modules">
+    <h2>Course Modules</h2>
+    <div class="accordion">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+     Defining Cyber, Security, and Cybersecurity
       </div>
-    </section>
-<br>
-    
+      <div class="accordion-body">
+         Fundamentals of cybersecurity concepts and terminology.
+      </div>
 
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+         The Hacking Process
+      </div>
+      <div class="accordion-body">
+         Steps involved in cyber attacks.
+      </div>
 
-<section  id="reviews">
-  <h2>Learner Reviews</h2>
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+          Evolution of the Internet
+      </div>
+      <div class="accordion-body">
+         How internet growth created cybersecurity challenges.
+      </div>
 
-  <div class="rating-summary">
-    <h1>4.7</h1>
-    <p>⭐⭐⭐⭐⭐ (2,456 reviews)</p>
-  </div>
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+        Global Telecommunications Architecture
+      </div>
+      <div class="accordion-body">
+          Understanding global networks and vulnerabilities.
+      </div>
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+          Threat Actors and Motivations
+      </div>
+      <div class="accordion-body">
+         Types of attackers and their objectives.
+      </div>
+    </div>
+  </section>
+  <br>
+  
+  <section id="reviews">
+    <div class="rating-summary">
+      <h1>4.7</h1>
+      <p>⭐⭐⭐⭐⭐ (2,456 reviews)</p>
+    </div>
 
-  <div class="rating-bars">
-    <div>5 stars <span class="bar"><span style="width:80%"></span></span></div>
-    <div>4 stars <span class="bar"><span style="width:15%"></span></span></div>
-    <div>3 stars <span class="bar"><span style="width:3%"></span></span></div>
-    <div>2 stars <span class="bar"><span style="width:1%"></span></span></div>
-    <div>1 star <span class="bar"><span style="width:2%"></span></span></div>
-  </div>
-</section>
-
-<footer class="footer">
+    <div class="rating-bars">
+      <div>5 stars <span class="bar"><span style="width:80%"></span></span></div>
+      <div>4 stars <span class="bar"><span style="width:15%"></span></span></div>
+      <div>3 stars <span class="bar"><span style="width:3%"></span></span></div>
+      <div>2 stars <span class="bar"><span style="width:1%"></span></span></div>
+      <div>1 star <span class="bar"><span style="width:2%"></span></span></div>
+    </div>
+  </section>
+  
+ <footer class="footer">
         <div class = "footer-container">
             <div class = "footer-section">
                 <h2>SkillSprout</h2>
@@ -194,7 +188,7 @@
         </div>
     </footer>
 
-
-<script src="../js/cybersecurity.js"></script>
+  <script src="../js/Ai.js"></script>
 </body>
+
 </html>
