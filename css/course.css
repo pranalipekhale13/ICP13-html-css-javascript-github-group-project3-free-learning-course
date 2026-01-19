@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .logo {
   height: 45px;
   margin-right: 15px;
@@ -7,9 +12,8 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #ddb892, #ede0d4);
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
-
 .navbar {
   display: flex;
   align-items: center;
@@ -93,18 +97,6 @@ body {
 }
 
 /*pages*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ddb892, #ede0d4);
-  padding: 40px;
-}
-
 
 .card-container {
   display: grid;
@@ -126,7 +118,7 @@ body {
   background: #fff;
   width: 330px;
 
-  min-height: 420px; 
+  min-height: 420px;
 
   border-radius: 16px;
   padding: 16px;
@@ -135,7 +127,7 @@ body {
 
 
   box-sizing: border-box;
- 
+
 
 }
 
@@ -253,7 +245,7 @@ button:hover {
   background-color: #ffffff;
   border-top: 2px solid #d9d9d9;
   font-family: 'Times New Roman', Times, serif;
-  padding: 40px 20px 20px;
+  padding: 20px 10px 10px;
   margin-top: 20px;
 }
 
@@ -340,40 +332,6 @@ button:hover {
   }
 
   .social-icons {
-    justify-content: center;
-  }
-
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .heading {
-    font-size: 9px;
-  }
-
-  .image-section {
-    width: 350px;
-    height: 350px;
-  }
-
-  .image {
-    height: 300px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-
-  .caption {
-    font-size: 14px;
-    margin: auto;
-  }
-
-  .btn1 {
-    font-size: 12px;
-    padding: 8px 12px;
-  }
-
-  .card-container {
     justify-content: center;
   }
 }
